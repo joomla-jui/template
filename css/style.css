@@ -1,0 +1,83 @@
+:root {
+    --bg-sidebar: #1a3867;
+    --bg-logo-sidebar: #122942;
+    --active-color: #2d6ca2;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    padding-bottom: 20px;
+    padding-left: 0;
+    padding-right: 0;
+    z-index: 1000;
+    overflow-x: hidden;
+    overflow-y: auto;
+    /* Scrollable contents if viewport is shorter than content. */
+    background: var(--bg-sidebar);
+}
+.sidebar a {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: .7rem;
+    letter-spacing: .2rem;
+    padding: .75rem 1rem;
+}
+.sidebar a:focus, .sidebar a:visited, .sidebar a:hover, .sidebar a:active {
+    background-color: var(--active-color) !important;
+    text-decoration: none;
+}
+.sidebar em {
+    font-size: 1rem; }
+.sidebar .header {
+    padding-top: 20px;
+    background-color: var(--bg-logo-sidebar);
+    padding-bottom: 10px;
+}
+.sidebar h1 {
+    color: #fff;
+    border: none;
+    font-size: 0.9rem;
+    padding: 0rem 1rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+}
+.sidebar .site-title {
+    margin-top: .5rem;
+    margin-bottom: 1.75rem;
+}
+.sidebar .site-title a {
+    font-size: .9rem;
+    padding-left: 0;
+    padding-right: 0;
+    cursor: pointer; }
+.sidebar .site-title a:hover {
+    background: none !important;
+}
+.sidebar .nav {
+    margin-bottom: 20px;
+}
+.sidebar .nav-item {
+    width: 100%; }
+.sidebar .nav-item + .nav-item {
+    margin-left: 0;
+}
+.sidebar .nav-link {
+    border-radius: 0;
+}
+.sidebar .logout-button {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    width: 85%;
+    text-align: center;
+    border-radius: .3rem;
+}
+
+/** fix bootstrap **/
+
+.table {
+    margin-bottom: unset;
+}
